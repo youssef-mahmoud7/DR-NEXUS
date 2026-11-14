@@ -1,0 +1,4 @@
+-- DR. NEXUS database baseline
+-- Domain tables are deliberately not defined in the foundation phase.
+-- Add reviewed, versioned Supabase PostgreSQL migrations under migrations/
+-- before implementing authentication profiles, mission data, or health records.
