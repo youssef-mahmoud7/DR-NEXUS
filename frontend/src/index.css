@@ -47,4 +47,26 @@ button { cursor: pointer; }
 .profile-grid { display: grid; grid-template-columns: 1fr; }
 .range { width: 100%; accent-color: #22d3ee; }
 
-@media (min-width: 1024px) { .profile-grid { grid-template-columns: 1fr 1.2fr; align-items: center; gap: 2rem; } }
+.anatomy-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.anatomy-viewport {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 38%, rgba(8, 145, 178, 0.14), transparent 52%),
+              linear-gradient(180deg, #07111f 0%, #030712 100%);
+}
+
+@media (min-width: 1024px) {
+  .profile-grid { grid-template-columns: 1fr 1.2fr; align-items: center; gap: 2rem; }
+  .anatomy-layout {
+    grid-template-columns: 1fr 360px;
+    align-items: stretch;
+  }
+  .anatomy-viewport {
+    min-height: 620px;
+  }
+}
